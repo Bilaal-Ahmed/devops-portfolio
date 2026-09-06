@@ -1,0 +1,4 @@
+import { BarChart3, Braces, Cloud, Container, GitCommitHorizontal, Package, Server, ShieldCheck, Terminal, Workflow } from "lucide-react";
+import type { SkillGroup } from "../data/skills";
+const icons = { cloud: Cloud, container: Container, cluster: Server, workflow: Workflow, code: GitCommitHorizontal, ship: Package, chart: BarChart3, terminal: Terminal, shield: ShieldCheck, braces: Braces };
+export function SkillCard({ group }: { group: SkillGroup }) { const Icon = icons[group.icon as keyof typeof icons]; return <article className="skill-card"><div className="skill-icon"><Icon size={18} /></div><h3>{group.category}</h3><div className="tag-list">{group.skills.map((skill) => <span key={skill}>{skill}</span>)}</div></article>; }
