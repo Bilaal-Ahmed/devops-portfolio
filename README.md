@@ -1,6 +1,6 @@
 # Bilal Ahmed | DevOps Engineer Portfolio
 
-Professional personal portfolio for Bilal Ahmed, focused on cloud infrastructure, DevSecOps, Kubernetes, CI/CD, and observability.
+Professional personal portfolio for *Bilal Ahmed*, focused on cloud infrastructure, DevSecOps, Kubernetes, CI/CD, and observability.
 
 The site presents practical infrastructure projects, technical skill areas, a career journey, education, case-study details, and direct contact links in a dark terminal-inspired interface.
 
