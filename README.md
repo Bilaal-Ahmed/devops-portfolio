@@ -1,75 +1,96 @@
-# React + TypeScript + Vite
+# Bilal Ahmed | DevOps Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Professional personal portfolio for Bilal Ahmed, focused on cloud infrastructure, DevSecOps, Kubernetes, CI/CD, and observability.
 
-Currently, two official plugins are available:
+The site presents practical infrastructure projects, technical skill areas, a career journey, education, case-study details, and direct contact links in a dark terminal-inspired interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Highlights
 
-## React Compiler
+- Responsive single-page portfolio with mobile navigation
+- Terminal-style DevOps hero and infrastructure visuals
+- Data-driven project and skill cards
+- Case-study modal for project architecture, implementation, reliability, and monitoring details
+- Project previews for CI/CD pipelines, Kubernetes resources, and observability workflows
+- Resume viewing and download actions
+- GitHub, LinkedIn, email, and WhatsApp contact links
+- SEO title, description, and Open Graph metadata
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Projects Covered
 
-## Expanding the ESLint configuration
+- DevOps Cloud Infrastructure & CI/CD
+- Kubernetes Deployment & Administration
+- CI/CD Kubernetes Deployment
+- Kubernetes Observability & Monitoring
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technology
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- lucide-react
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Install dependencies:
 
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Start the development server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm run dev
 ```
+
+The app is available at the local URL printed by Vite.
+
+## Validation
+
+Run ESLint:
+
+```bash
+npm run lint
+```
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── Navbar.tsx
+│   ├── ProjectCard.tsx
+│   ├── SectionHeading.tsx
+│   └── SkillCard.tsx
+├── data/
+│   ├── projects.ts
+│   └── skills.ts
+├── App.tsx
+├── index.css
+└── main.tsx
+```
+
+The provided resume is served from `public/BILAL AHMED DevOps.pdf`. Replace that file when updating the resume while keeping the same filename, or update the links in `src/App.tsx`.
+
+## Deployment
+
+The project is a standard Vite application and can be deployed to Vercel or another static hosting provider using the existing repository configuration.
+
+For Vercel, use:
+
+- Build command: `npm run build`
+- Output directory: `dist`
